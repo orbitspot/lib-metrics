@@ -1,4 +1,4 @@
-# Logs GO 
+# lib-metrics GO 
 
 Biblioteca para padronizar os LOGs em nossos projetos GO.
 
@@ -8,7 +8,7 @@ Tambem suporta os logs de ERROS no SENTRY.
 
 No diretório do seu projeto em GO, obtendoa versão mais recente disponível. Exemplo:
 ```
-go get github.com/orbitspot/lib-logs
+go get github.com/orbitspot/lib-metrics
 ```
 
 1 - Dentro de seu arquivo `.env`, adicione as variáveis de ambiente abaixo, com a URL do sentry (configurada por projeto). Exemplo:
@@ -21,15 +21,15 @@ SENTRY_DSN=  # Observability for Errors. Format => https://XXXXXXXXXXXXXXXXXXXXX
 ```
 **Atencão: Solicitar para o time de DEVOPS preparar o Sentry em producão e configurar o pipeline para o seu projeto**
 
-2 - Segue um exemplo de como utilizar os logs. Lembre-se de importar nos códigos corretamente o pacote **"github.com/orbitspot/lib-logs/pkg/log"**
+2 - Segue um exemplo de como utilizar os logs. Lembre-se de importar nos códigos corretamente o pacote **"github.com/orbitspot/lib-metrics/pkg/log"**
 
 ```
 package main
 
 import (
-	"github.com/orbitspot/lib-logs/example"
-	"github.com/orbitspot/lib-logs/pkg/errors"
-	"github.com/orbitspot/lib-logs/pkg/log"
+	"github.com/orbitspot/lib-metrics/example"
+	"github.com/orbitspot/lib-metrics/pkg/errors"
+	"github.com/orbitspot/lib-metrics/pkg/log"
 	_ "github.com/joho/godotenv/autoload"
 )
 
