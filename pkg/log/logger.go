@@ -23,12 +23,12 @@ const (
 )
 
 var (
-	internalLog *log.Logger
-	logLevelApp = os.Getenv("LOG_LEVEL")
-	logCodeName = os.Getenv("LOG_CODE_NAME")
-	environment = os.Getenv("ENVIRONMENT")
-	appName     = os.Getenv("APP_NAME")
-	logCode     = true
+	internalLog *log.Logger = log.New(os.Stdout, "", log.Ldate|log.Ltime|log.Lmsgprefix)
+	logLevelApp             = os.Getenv("LOG_LEVEL")
+	logCodeName             = os.Getenv("LOG_CODE_NAME")
+	environment             = os.Getenv("ENVIRONMENT")
+	appName                 = os.Getenv("APP_NAME")
+	logCode                 = true
 )
 
 // Init Logging
