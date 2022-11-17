@@ -1,4 +1,4 @@
-module github.com/orbitspot/lib-logs
+module github.com/orbitspot/lib-metrics
 
 go 1.19
 
