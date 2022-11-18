@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/fatih/color"
 	_ "github.com/joho/godotenv/autoload"
+	"github.com/orbitspot/lib-metrics/pkg/errors"
 	"log"
 	"os"
 	"runtime"
