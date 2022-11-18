@@ -2,8 +2,7 @@ package example
 
 import (
 	e "errors"
-
-	"github.com/orbitspot/lib-logs/pkg/errors"
+	"github.com/orbitspot/lib-metrics/pkg/errors"
 )
 
 func Level1() error {
